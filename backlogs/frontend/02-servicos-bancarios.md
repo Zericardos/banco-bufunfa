@@ -1,14 +1,14 @@
 ## Épico 2: Acesso aos serviços bancários
 *Histórias focadas aos acessos*
 ```gherkin
-US1 - Acesso ao sistema
+US2.1 - Acesso ao sistema
 Como analista de sistema, preciso que o cliente consiga acessar 
 ```
 
 ## Épico 3: Serviços Bancários Básicos
 *Histórias focadas nos serviços bancários básicos*
 ```gherkin
-US1 - Serviços bancários básicos
+US3.1 - Serviços bancários básicos
 
 Como analista jurídico, preciso que o banco ofereça a seus clientes serviços bancários básicos a todas as contas.
 

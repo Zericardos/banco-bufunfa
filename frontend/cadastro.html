@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+    <!-- Link to an external CSS file -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <div class="form-container" method="post" action=""></div>">
+        <form id="form-cadastro">
+            <div>
+                <label for="nome"> Primeiro Nome</label>
+                <input type="text" id="nome" name="Nome" 
+                minlength="2" maxlength="41"
+                 placeholder="José"
+                 required>
+                 <span id="nome-aviso" class="aviso"><small></small></span>
+            </div>
+            <div>
+                <label for="sobrenome">Sobrenome</label>
+                <input type="text" id="sobrenome" name="Sobrenome" placeholder="Silva"required>
+            </div>
+            <div>
+                <label for="cpf"> CPF</label>
+                <input type="number" id="cpf" name="CPF" placeholder="123.456.789-09" required>
+            </div>
+            <div>
+                <label for="senha"> Senha</label>
+                <input type="password"
+                inputmode="numeric"
+                pattern="\d{8}" id="senha" name="senha" placeholder="Apenas números" required aria-label="Senha de 6 dígitos">
+            </div>
+        </form>
+    </div>
+    <!-- Link to an external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>

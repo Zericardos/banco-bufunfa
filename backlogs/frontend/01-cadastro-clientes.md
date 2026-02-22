@@ -5,7 +5,7 @@ O Banco Bufunfa deve oferecer serviços bancários aos seus clientes.
 ## Épico 1: Cadastro de cliente
 *Histórias focadas no cadastro do cliente*
 ```gherkin
-US1 - Localização da opção de cadastro 
+US1.1 - Localização da opção de cadastro 
 
 Como analista de negócio, preciso que o cliente consiga localizar uma opção de cadastro que deve estar de fácil acesso
 
@@ -22,7 +22,7 @@ Critérios de aceitação
 ```
 
 ```gherkin
-US2 - Cadastro em uma única sessão
+US1.2 - Cadastro em uma única sessão
 
 Como analista de negócios, preciso que o cliente consiga realizar seu cadastro no sistema a partir de acesso remoto clicando no botão de cadastro
 
@@ -40,7 +40,7 @@ Casos de aceitação:
   [CA01] Dado que o cliente preencha o seu "Primerio Nome", Sobrenome, CPF e Senha de acordo com as regras do sistema, então o sistema deve efetuar o cadastro do usuário com sucesso e informar a mensagem "Cliente [Nome do Cliente] cadastrado com sucesso"
 ```
 ```gherkin
-US3 - Validação do campo "Primeiro Nome"
+US1.3 - Validação do campo "Primeiro Nome"
 
 Como analista de negócios, preciso que o cliente consiga realizar seu cadastro no sistema informando o seu Primeiro Nome com padrões mínimos de legibilidade
 
@@ -61,7 +61,7 @@ Casos de aceitação
 ```
 
 ```gherkin
-US4 - Validação do campo "Sobrenome"
+US1.4 - Validação do campo "Sobrenome"
 
 Como analista de negócios, preciso que o cliente consiga realizar seu cadastro no sistema informando o seu Sobrenome com padrões mínimos de legibilidade
 
@@ -84,7 +84,7 @@ Critérios de aceitação
 ```
 
 ```gherkin
-US5 - Validação do campo "CPF"
+US1.5 - Validação do campo "CPF"
 
 Como analista de negócios, preciso que o cliente consiga realizar seu cadastro no sistema informando o seu CPF corretamente
 
@@ -107,7 +107,7 @@ Critérios de aceitação
  ```
 
 ```gherkin
-US6 - Finalização de cadastro
+US1.6 - Finalização de cadastro
 
 Como analista de negócios, preciso que o cliente consiga realizar seu cadastro no sistema informando após realizar todos os dados corretamente
 
