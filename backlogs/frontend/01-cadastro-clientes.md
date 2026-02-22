@@ -5,7 +5,7 @@ O Banco Bufunfa deve oferecer serviços bancários aos seus clientes.
 ## Épico 1: Cadastro de cliente
 *Histórias focadas no cadastro do cliente*
 ```gherkin
-US1.1 - Localização da opção de cadastro 
+[X] US1.1 - Localização da opção de cadastro (Concluído em 15/02/2026)
 
 Como analista de negócio, preciso que o cliente consiga localizar uma opção de cadastro que deve estar de fácil acesso
 
@@ -22,7 +22,7 @@ Critérios de aceitação
 ```
 
 ```gherkin
-US1.2 - Cadastro em uma única sessão
+[X] US1.2 - Cadastro em uma única sessão (Concluído em 16/02/2026)
 
 Como analista de negócios, preciso que o cliente consiga realizar seu cadastro no sistema a partir de acesso remoto clicando no botão de cadastro
 
@@ -52,12 +52,13 @@ Regras
 
 Casos de aceitação
 
-  [CA01] Dado que o cliente preencha o campo "Primeiro Nome" com pelo menos duas letras e apenas letras, ao sair da caixa de seleção, o sistema deverá formatar o nome digitado na caixa de preenchimento desse campo com a primeira letra do nome para maiúscula e as demais minúsculas por 0,5 segundos.
-  [CA01] Dado que o cliente preencha o campo "Primerio Nome" com número, espaços ou caracter especial, imediatamente o sistema deve apresentar o texto "Apenas letras são aceitas" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha
-  [CA02] Dado que o cliente preencheu o campo "Primerio Nome" com número, espaços ou caracter especial, e então torne o texto apenas com letras imediatamente o sistema deve remover o texto destacado "Apenas letras são aceitas" abaixo da caixa de preenchimento.
-  [CA03] Dado que o cliente preencha o campo "Primerio Nome" com 40 letras e tente digitar mais, o sistema deve ignorar os caracteres adicionais.
-  [CA04] Dado que o cliente preencha o campo "Primerio Nome" com 40 letras e tente digitar mais, imediatamente o sistema deve apresentar o texto "Apenas 40 letras são aceitas" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha por 5 segundos após a última tentativa de digitação.
-  [CA05] Dado que o cliente preencha o campo "Primerio Nome" com 1 letra e mova o cursor de digitação para fora da caixa de digitação do "Primeiro Nome", o sistema deve imediatamente o sistema deve apresentar o texto "Nome com pelo menos 2 caracteres é aceito" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que haja digitação de 2 ou mais caracteres. 
+  [X] [CA01] Dado que o cliente preencha o campo "Primeiro Nome" com pelo menos duas letras e apenas letras, ao sair da caixa de seleção, o sistema deverá formatar o nome digitado na caixa de preenchimento desse campo com a primeira letra do nome para maiúscula e as demais minúsculas por 0,5 segundos. (Concluído em 18/02/2026).
+  [X] [CA02] Dado que o cliente preencha o campo "Primerio Nome" com números, imediatamente o sistema deve apresentar o texto "Números não são permitidos. Apenas 2 a 40 letras são permitidas" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha. (Concluído em 22/02/2026).
+  [X] [CA03] Dado que o cliente preencha o campo "Primerio Nome" com espaços, imediatamente o sistema deve apresentar o texto "Espaços não são permitidos. Apenas 2 a 40 letras são permitidas" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha. (Concluído em 22/02/2026).
+  [X] [CA04] Dado que o cliente preencha o campo "Primerio Nome" com caracteres especiais, imediatamente o sistema deve apresentar o texto "Espaços não são permitidos. Apenas 2 a 40 letras são permitidas" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha. (Concluído em 22/02/2026).
+  [X] [CA05] Dado que o cliente preencha o campo "Primerio Nome" com 40 letras e tente digitar mais, o sistema deve ignorar os caracteres adicionais (Concluído em 22/02/2026).
+  [X] [CA05] Dado que o cliente preencha o campo "Primerio Nome" com 40 letras e tente digitar mais, imediatamente o sistema deve apresentar o texto "Apenas 2 a 40 letras são permitidas" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha por 5 segundos após a última tentativa de digitação (Concluído em 22/02/2026).
+  [X] [CA06] Dado que o cliente preencha o campo "Primerio Nome" com 1 letra e mova o cursor de digitação para fora da caixa de digitação do "Primeiro Nome", o sistema deve imediatamente o sistema deve apresentar o texto "Apenas 2 a 40 letras são permitidas" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que haja digitação de 2 ou mais caracteres (Concluído em 22/02/2026). 
 ```
 
 ```gherkin
@@ -66,7 +67,7 @@ US1.4 - Validação do campo "Sobrenome"
 Como analista de negócios, preciso que o cliente consiga realizar seu cadastro no sistema informando o seu Sobrenome com padrões mínimos de legibilidade
 
 Regras
-  [R01] O sistema deve apresentar ao usuário no campo Sobrenome a primeira letra maiúscula de cada palavra e as demais minúsculas independentemente da caixa digitada. Essa transformação deve ocorrer após 0,5 segundos para que o usuário perceba a ocorrência. Exceção para essa regra são palavras (exceto a primeira) com 3 letras ou mais que não sofrem transformação.
+  [R01] O sistema deve apresentar ao usuário no campo Sobrenome a primeira letra maiúscula de cada palavra e as demais minúsculas independentemente da caixa digitada. Essa transformação deve ocorrer após 0,5 segundos para que o usuário perceba a ocorrência.
   [R02] O campo "Sobrenome" pode aceitar apenas letras, letras com acento do alfabeto latino e espaços
   [R03] O campo "Sobrenome" não deve permitir palavras com 1 caracter
   [R04] O campo "Sobrenome" pode aceitar até 120 caracteres
@@ -74,13 +75,11 @@ Regras
 
 Critérios de aceitação
 
-  [CA01] Dado que o cliente preencha o campo "Sobrenome" com pelo menos duas letras em cada palavra (com apenas letras) com apenas espaços entre as palavras, ao sair da caixa de seleção, o sistema deverá formatar o nome digitado na caixa de preenchimento desse campo com a primeira letra de cada palavra para maiúscula e as demais minúsculas por 0,5 segundos.
-  [CA02] Dado que o cliente preencha o campo Sobrenome com todas as palavras com apenas 1 letra e mova o cursor de digitação para fora da caixa de digitação do Sobrenome, o sistema deve imediatamente o sistema deve apresentar o texto "Um sobrenome com pelo menos 2 caracteres é aceito" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que haja digitação de 2 ou mais caracteres em pelo menos uma palavra. 
-  [CA03] Dado que o cliente preencha o campo Sobrenome com alguma palavra com mais de 40 letras e para o campo total menos de 120 caracteres e tente digitar mais, imediatamente o sistema deve apresentar o texto "Apenas 40 caracteres são aceitos por sobrenome. Por favor, corrija." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que essa condição seja desfeita.
-  [CA04] Dado que o cliente preencha o campo Sobrenome com alguma palavra com mais de 40 letras e no total de 120 caracteres e tente digitar mais, imediatamente o sistema deve apresentar o texto "Apenas 120 caracteres são aceitos." abaixo da caixa de preenchimento em substituição à mensagem original "Apenas 40 caracteres são aceitos por sobrenome. Por favor, corrija." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha por 5 segundos após a última tentativa de digitação. Após esse tempo, a mensagem de CA08 deve reaparecer caso haja ainda condição.
-  [CA05] Dado que o cliente preencha o campo Sobrenome com 120 caracteres e tente digitar mais, imediatamente o sistema deve apresentar o texto "Apenas 120 caracteres são aceitos." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha por 5 segundos após a última tentativa de digitação.
-  [CA06] Dado que o cliente preencha o campo "Primerio Nome" com 1 letra e mova o cursor de digitação para fora da caixa de digitação do "Primeiro Nome", o sistema deve imediatamente o sistema deve apresentar o texto "Nome com pelo menos 2 caracteres é aceito" abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que haja digitação de 2 ou mais caracteres. 
-  [CA07] Caso o usuário digite no campo CPF qualquer caractere diferente de número, imediatamente o sistema deve apresentar o texto "Apenas números são aceitos." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que a condição seja satisfeita.
+  [X] [CA01] Dado que o cliente preencha o campo "Sobrenome" com pelo menos duas letras em cada palavra (com apenas letras) com apenas espaços entre as palavras, ao sair da caixa de seleção, o sistema deverá formatar o nome digitado na caixa de preenchimento desse campo com a primeira letra de cada palavra para maiúscula e as demais minúsculas por 0,5 segundos (Concluído em 22/02/2026).
+  [X] [CA02] Dado que o cliente preencha o campo Sobrenome com todas as palavras com apenas 1 letra e mova o cursor de digitação para fora da caixa de digitação do Sobrenome, o sistema deve imediatamente o sistema deve apresentar o texto "Pelo menos 2 letras devem ser informadas no campo Sobrenome." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que haja digitação de 2 ou mais caracteres em pelo menos uma palavra (Concluído em 22/02/2026).
+  [X] [CA03] Dado que o cliente preencha o campo Sobrenome com alguma palavra com mais de 40 letras e para o campo total menos de 120 caracteres e tente digitar mais, imediatamente o sistema deve apresentar o texto "Apenas 40 caracteres são aceitos por sobrenome." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha. E então, ignorar as teclas digitadas em excesso nesse sobrenome. (Concluído em 22/02/2026).
+  [X] [CA04] Dado que o cliente preencha o campo Sobrenome com alguma palavra com mais de 40 letras e no total de 120 caracteres e tente digitar mais, imediatamente o sistema deve apresentar o texto "Apenas 120 caracteres são aceitos." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha por 5 segundos após a última tentativa de digitação. Após esse tempo, a mensagem de CA08 deve reaparecer caso haja ainda condição. (Concluído em 22/02/2026).
+  [CA05] Dado que o cliente preencha o campo Sobrenome com 120 caracteres e tente digitar mais, imediatamente o sistema deve apresentar o texto "Apenas 120 caracteres são aceitos." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha.
 ```
 
 ```gherkin
@@ -104,6 +103,7 @@ Critérios de aceitação
   [CA04] Caso o usuário digite qualquer caracter diferente de algarismo no campo Senha, imediatamente o sistema deve apresentar o texto "Apenas números são aceitos. Por favor, corrija." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que a condição seja satisfeita.
   [CA05] Caso o usuário digite qualquer sequência de números em ordem crescente ou decrescente no campo Senha, imediatamente o sistema deve apresentar o texto "Sequência em ordem crescente ou decrescente não permitida (exemplo: 45 ou 87). Por favor, corrija." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que a condição seja satisfeita.
   [CA06] Caso o usuário digite qualquer sequência de números iguais no campo Senha, imediatamente o sistema deve apresentar o texto "Sequência de números iguais repetidos não permitida (exemplo: 44 ou 77). Por favor, corrija." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que a condição seja satisfeita.
+ [CA07] Caso o usuário digite no campo CPF qualquer caractere diferente de número, imediatamente o sistema deve apresentar o texto "Apenas números são aceitos." abaixo da caixa de preenchimento em fonte Nunit, tamanho 7, em cor vermelha até que a condição seja satisfeita.
  ```
 
 ```gherkin
