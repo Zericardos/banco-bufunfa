@@ -32,8 +32,37 @@ body {
     opacity: 0;
     display: none;
 }
+.aviso.caracteresmaximos.oculto {
+    opacity: 0;
+    display: none;
+}
+.aviso.caracteresmaximos.visivel {
+    opacity: 1;
+    display: block;
+    color: red;
+}
 .aviso.visivel {
     opacity: 1;
     display: block;
     color: red;
+}
+.aviso.visivel.invalido {
+    opacity: 1;
+    display: block;
+    color: red;
+}
+.aviso.visivel.valido {
+    opacity: 1;
+    display: block;
+    color: green;
+}
+#cpf.valido {
+    box-shadow: 0 0 5px 2px #4caf50a0; /* verde suave */
+    border-color: #4caf50;
+    transition: box-shadow 0.3s, border-color 0.3s;
+}
+#cpf.invalido {
+    box-shadow: 0 0 5px 2px #f44336a0; /* vermelho suave */
+    border-color: #f44336;
+    transition: box-shadow 0.3s, border-color 0.3s;
 }

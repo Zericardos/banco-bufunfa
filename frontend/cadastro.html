@@ -26,7 +26,8 @@
             </div>
             <div>
                 <label for="cpf"> CPF</label>
-                <input type="number" id="cpf" name="CPF" placeholder="123.456.789-09" required>
+                <input type="text" id="cpf" name="CPF" placeholder="123.456.789-09" maxlength="15" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required>
+                <span id="cpf-aviso" class="aviso"><small></small></span>
             </div>
             <div>
                 <label for="senha"> Senha</label>
@@ -37,7 +38,9 @@
         </form>
     </div>
     <!-- Link to an external JavaScript file -->
-    <script src="script.js"></script>
-    <script src="scriptsobrenome.js"></script>
+    <script src="scripts/primeironome.js"></script>
+    <script src="scripts/scriptsobrenome.js"></script>
+    <script src="scripts/cpf.js"></script>
+    <script src="scripts/senha.js"></script>
 </body>
 </html>
